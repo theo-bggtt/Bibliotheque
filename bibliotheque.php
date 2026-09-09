@@ -1,7 +1,8 @@
 <?php
 
+namespace Bibliotheque\Modele;
 
-class Bibliotheque implements Iterator
+class Bibliotheque implements \Iterator
 {
     private array $livres = [];
 

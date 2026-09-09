@@ -1,6 +1,7 @@
 <?php
+namespace Bibliotheque\Modele;
 
-class Livreelectronique extends Livre
+class LivreElectronique extends Livre
 {
     public private(set) float $poids;
 

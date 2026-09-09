@@ -1,10 +1,14 @@
 <?php
 
-require_once 'bibliotheque.php';
-require_once 'livre.php';
-require_once 'livreElectronique.php';
+// require_once 'bibliotheque.php';
+// require_once 'livre.php';
+// require_once 'livreElectronique.php';
 
-$bibliotheque = new Bibliotheque();
+use Bibliotheque\Modele\Bibliotheque as ModeleBibliotheque;
+use Bibliotheque\Modele\Livre as Livre;
+use Bibliotheque\Modele\LivreElectronique as LivreElectronique;
+
+$bibliotheque = new ModeleBibliotheque();
 
 $erreur = false;
 

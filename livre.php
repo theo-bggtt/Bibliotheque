@@ -1,5 +1,5 @@
 <?php
-
+namespace Bibliotheque\Modele;
 class Livre
 {
     public private(set) string $titre;
