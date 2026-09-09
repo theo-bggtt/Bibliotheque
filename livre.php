@@ -5,9 +5,9 @@ class Livre
     public private(set) string $titre;
     public private(set) string $auteur;
     public private(set) string $isbn;
-    public private(set) DateTimeInterface $dateDeParution;
+    public private(set) \DateTimeInterface $dateDeParution;
 
-    public function __construct(string $titre, string $auteur, string $isbn, DateTimeInterface $dateDeParution)
+    public function __construct(string $titre, string $auteur, string $isbn, \DateTimeInterface $dateDeParution)
     {
         $this->titre = $titre;
         $this->auteur = $auteur;

@@ -1,8 +1,8 @@
 <?php
 
-// require_once 'bibliotheque.php';
-// require_once 'livre.php';
-// require_once 'livreElectronique.php';
+require_once 'bibliotheque.php';
+require_once 'livre.php';
+require_once 'livreElectronique.php';
 
 use Bibliotheque\Modele\Bibliotheque as ModeleBibliotheque;
 use Bibliotheque\Modele\Livre as Livre;
