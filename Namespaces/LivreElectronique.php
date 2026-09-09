@@ -1,5 +1,5 @@
 <?php
-namespace Bibliotheque\Modele;
+namespace Bibliotheque\Namespaces;
 
 class LivreElectronique extends Livre
 {

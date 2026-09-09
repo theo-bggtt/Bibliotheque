@@ -4,11 +4,17 @@
 // require_once 'livre.php';
 // require_once 'livreElectronique.php';
 
-use Bibliotheque\Modele\Bibliotheque as ModeleBibliotheque;
-use Bibliotheque\Modele\Livre as Livre;
-use Bibliotheque\Modele\LivreElectronique as LivreElectronique;
+spl_autoload_register(function ($class) {
+    $path = str_replace('\\', DIRECTORY_SEPARATOR, $class);
+    require $path . '.php';
+});
 
-$bibliotheque = new ModeleBibliotheque();
+
+use Bibliotheque\Namespaces\Bibliotheque as NamespacesBibliotheque;
+use Bibliotheque\Namespaces\Livre as NamespacesLivre;
+use Bibliotheque\Namespaces\LivreElectronique as NamespacesLivreElectronique;
+
+$bibliotheque = new NamespacesBibliotheque();
 
 $erreur = false;
 
@@ -71,12 +77,14 @@ try {
 ?>
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POO : Bibliothèque</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="wrapper">
         <h1>Ma bibliothèque</h1>
@@ -100,4 +108,5 @@ try {
         </div>
     </div>
 </body>
+
 </html>

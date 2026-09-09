@@ -1,6 +1,6 @@
 <?php
 
-namespace Bibliotheque\Modele;
+namespace Bibliotheque\Namespaces;
 
 class Bibliotheque implements \Iterator
 {
